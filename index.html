@@ -4,76 +4,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Heebo&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css.css">
 <script src="javascript.js"></script>
-<style>
-body {
-margin: 0; 
-overflow-x: hidden; 
-font-family: Heebo;
-}
-.easy-container { 
-width: 100%;  
-background: radial-gradient(#ffcc00, orange); 
-color: white;
-text-align: center;
-padding: 6.25em 0;
-font-family: Fira Sans;
-}
-ul {
-float: left;
-margin: 0;
-position: sticky;
-top: 0;
-padding: 0.75em 0;
-list-style-type: none;
-width: 13.33%;
-height: 800px;
-color: black;
-background: #f1f1f1;
-text-align: center;
-}
-li a {
-display: block;
-color: #000;
-padding: 8px 16px;
-text-decoration: none;
-}
-li a:hover {
-background: orange;
-color: white;
-}
-.main-content {
-font-size: 1.5em; 
-margin-left: 16%;
-}
-.road-to-aero {
-
-}
-#final-result {
-background: rgba(115, 175, 212, 0.4); 
-width: 16.6666em; 
-height: 2.08333em; 
-backdrop-filter: blur(4px);
-position: absolute; 
-overflow: hidden;
-border: 1px solid #f1f1f1;
-border-top-left-radius: 6px;
-border-top-right-radius: 6px;
-box-shadow: 0px 0px 10px black;
-}
-.button {
-background: #f1f1f1;
-color: black;
-border: none;
-padding: 12px;
-margin: 8px;
-font-family: Heebo;
-font-size: 18px;
-}
-.button:hover {
-background: orange;
-color: white;
-}
-</style>
 <body>
 <div class="easy-container">
 <span style="font-size: 2.5em;">put a words here<br>
@@ -123,51 +53,5 @@ write something here, your text goes here!
 </div>
 </div>
 </div>
-
-<script>
-//Make the DIV element draggagle:
-dragElement(document.getElementById("final-result"));
-
-function dragElement(elmnt) {
-
-    elmnt.onmousedown = dragMouseDown;
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-function disappear() {
-document.getElementById("you").style.visibility = "hidden";
-}
-function appear() {
-document.getElementById("you").style.visibility = "visible";
-}
-</script>
 </body>
 </html>
