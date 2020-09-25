@@ -6,7 +6,9 @@ font-family: "Heebo";
 #easy-container {
 width: 100%;  
 background: 
-radial-gradient(#ffcc00, orange); 
+radial-gradient(#ffcc00, orange);
+background: -webkit-radial-gradient(#ffcc00, orange);
+background: orange;
 color: white;
 text-align: center;
 padding: 6.25em 0;
@@ -46,6 +48,7 @@ background: rgba(115, 175, 212, 0.4);
 width: 16.6666em; 
 height: 2.08333em; 
 backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
 position: absolute; 
 overflow: hidden;
 border: 1px solid #f1f1f1;
