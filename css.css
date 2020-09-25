@@ -5,9 +5,6 @@ font-family: "Heebo";
 }
 #easy-container {
 width: 100%;  
-background: 
-radial-gradient(#ffcc00, orange);
-background: -webkit-radial-gradient(#ffcc00, orange);
 background: orange;
 color: white;
 text-align: center;
