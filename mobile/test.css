@@ -24,6 +24,11 @@ position: -webkit-sticky;
 position: sticky;
 z-index: 1000000;
 }
+@supports not (position: sticky) and (position: -webkit-sticky) {
+ul {
+position: fixed;
+}
+}
 li {
 float: left;
 width: 25%;
