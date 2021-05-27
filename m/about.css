@@ -1,0 +1,71 @@
+body {
+margin: 0;
+overflow-x: hidden; 
+font-family: "Heebo";
+}
+#easy-container {
+width: 100%;  
+background: orange;
+color: white;
+text-align: center;
+padding: 6.25em 0;
+font-family: "Fira Sans";
+}
+ul {
+list-style-type: none;
+background: #f1f1f1;
+width: 100%;
+line-height: 40px;
+top: 0;
+overflow: hidden;
+margin: 0;
+padding: 0;
+position: -webkit-sticky;
+position: sticky;
+z-index: 1000000;
+}
+@supports not (position: sticky) and (position: -webkit-sticky) {
+ul {
+position: fixed;
+}
+}
+li {
+float: left;
+width: 25%;
+}
+li a {
+color: black;
+display: block;
+text-decoration: none;
+padding: 14px;
+text-align: center;
+margin: 0;
+}
+li a:hover {
+background: orange;
+color: white;
+}
+#active {
+background: grey;
+color: white;
+}
+#active:hover {
+background: grey;
+}
+#main-content {
+font-size: 1.5em; 
+margin: 2.5%;
+}
+.title {
+font-family: "Fira Sans"; 
+font-size: 1.5em;
+margin: 0;
+}
+p {
+margin: 0;
+}
+.heading {
+font-family: "Georgia";
+font-size: 20px;
+margin: 0;
+}
