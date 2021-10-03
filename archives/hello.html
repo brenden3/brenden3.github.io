@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!--yes, this was made entirely by a human, and yes, it took a while.-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<style>
+			body {
+				margin: 0em;
+				overflow-x: hidden;
+			}
+			.fixed-text {
+  				z-index: 1; 
+  				background-color: rgb(0,0,0);
+  				background-color: rgba(0,0,0, 0.1);
+ 				color: white;
+  				font-weight: bold;
+ 				font-size: 5em;
+  				border: 10px solid;
+  				position: fixed; 
+  				top: 50%;
+  				left: 50%;
+  				transform: translate(-50%, -50%);
+  				width: 300px;
+  				padding: 20px;
+  				text-align: center;
+			}
+			.background {
+				position: relative;
+				z-index: 1;
+				color: white;
+				background: linear-gradient(to bottom right, #00e600, #ffaa33) no-repeat;
+				width: 100%;
+				height: 62.5em;
+			}
+			.main-container {
+				z-index: 10; 
+				position: relative;
+				background: white;
+				text-align: center;
+				width: 100%;
+			}
+			.heading {
+				color: #333;
+				font-family: "Source Sans Pro", "Helvetica Thin", sans-serif;
+				font-size: 3.2em;
+				margin: 0em;
+			}
+			.sub-heading {
+				margin: 0em;
+				font-family: "Lato", sans-serif;
+				font-size: 2.5em;
+				color: white;
+				background: url(./media/3697567010_6ec9371123_o.gif) round;
+			}
+			.main-text {
+				font-family: "Open Sans", sans-serif;
+				font-size: 1.6em;
+				text-align: left;
+			}
+			.dog-thing {
+				transition: filter 2s, opacity 2s;
+				position: relative;
+				float: right;
+				opacity: 0;
+				filter: blur(0.3125em);
+				border: transparent;
+				border-radius: 0.5em;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.dog-thing:hover {
+				filter: blur(0px);
+				opacity: 1;
+			}
+			.bread {
+				float: left;
+			}
+			.crespy-bread {
+				float: right;
+				transform: scaleX(-1);
+			}
+			.favorites-container {
+				width: 28em;
+				height: 20em;
+				background: white;
+				margin: auto;
+				border-radius: 0.5em;
+				font-family: "Roboto";
+				font-size: 1.875em;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.favorites-title {
+				width: 28em;
+				height: 3em;
+				background: #0c96fc;
+				border-top-left-radius: 0.5em;
+				border-top-right-radius: 0.5em;
+				padding: 0.00053em;
+				color: white;
+			}
+			.favorites-main {
+				padding: 0px;
+				margin: 0px;
+				width: 28em;
+				height: 17em;
+				border-bottom-left-radius: 0.5em;
+				border-bottom-right-radius: 0.5em;
+			}
+			.favorites-videos {
+				list-style-type: none;
+				display: inline;
+				margin: 0px;
+			}
+			.dapperlogo {
+				float: left;
+				transform: translate(30%, 5%);
+				border: 0.23em solid white;
+				border-radius: 100%;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.please-sub {
+				transform: translate(13%,16%);
+				text-align: left;
+			}
+		</style>
+		<title>Page Title</title>
+	</head>
+	<body>
+		<div class="background">
+		</div>
+		<p class="fixed-text">
+			hello
+		</p>
+		<div class="main-container">
+			<h1 class="heading"><br>...and welcome to my website!<br></h1><hr style="border-top: 1px solid #eee; margin: 1em 0;">
+			<p class="sub-heading"><img class="bread" src="./media/giphy.gif" height="48" width="150">Let's get this bread<img class="crespy-bread" src="./media/giphy2.gif" width="150" height="48"></p><p class="main-text">"What are you even going to use this website for?" you so conveniently ask. Well... You know, um... Okay, fine, you have a point. I have no clue what I'm going to use this for. But I'm good at improvisation, and I'll just put things here as I go! Like this! (There's a hidden thing)<img class="dog-thing" src="./media/cursed dog thing.jpg" alt="weird dog thingy" width="280" height="250"><br><br><img src="./media/ea3dcff8ed8e8939d98c96b81f747623.jpg" width="470" height="100"><br><br>What, that wasn't good enough for you? Okay then, I can do better!</p>
+			<div class="favorites-container">
+				<div class="favorites-title">
+				<p>My favorite DapperLink videos</p>
+				</div>
+				<div class="favorites-main">
+					<ul>
+						<li style="float: left; "class="favorites-videos"><iframe width="355" height="200" src="https://www.youtube-nocookie.com/embed/Wo5wETObIhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+						<li style="float: right; padding-right: 40px;" class="favorites-videos"><iframe width="355" height="200" src="https://www.youtube-nocookie.com/embed/n1LdQlW4w1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+					</ul>
+					<img alt="DapperLink Logo" class="dapperlogo" src="./media/taDmVd9.png" width="220">
+					<p class="please-sub">Please check out these<br> videos and subscribe to<br>our channel. If you do, I'll<br> give you a cookie.</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
