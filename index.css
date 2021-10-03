@@ -1,0 +1,65 @@
+body {
+overflow-x: hidden; 
+font-family: "Heebo";
+font-size: 18px;
+color: white;
+background: #551717;
+margin: 0;
+}
+a {
+color: white;
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin-top: 40px;
+padding: 0;
+overflow: hidden;
+}
+li {
+float: left;
+width: 20%;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+h1 {
+display: inline;	
+}
+h3 {
+display: inline;
+}
+#main {
+margin: 8px;
+}
+#cmd {
+display: block;
+font-family: monospace;
+background: black;
+color: lightgrey;
+}
+#cmd:after {
+content: "_";
+opacity: 1;
+animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+from, to { opacity: 1; }
+50% { opacity: 0; }
+}
+#caption {
+margin-top: -20px;
+font-size: 14px;
+font-style: italic;
+color: lightgrey;
+cursor: pointer;
+width: max-content;
+}
+footer {
+background: black;
+text-align: center;
+padding: 53px;
+}
