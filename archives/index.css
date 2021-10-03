@@ -1,0 +1,50 @@
+body {
+overflow-x: hidden; 
+font-family: "Heebo";
+font-size: 18px;
+color: white;
+background: #551717;
+margin: 0;
+}
+a {
+color: white;
+text-decoration: none;
+}
+ul {
+list-style-type: none;
+margin-top: 40px;
+padding: 0;
+overflow: hidden;
+}
+li {
+float: left;
+width: 20%;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+text-decoration: none;
+}
+h1 {
+display: inline;	
+}
+h2 {
+margin-bottom: -16px;
+}
+h3 {
+display: inline;
+}
+#main {
+margin: 8px;
+}
+.site-container {
+background: black;
+overflow: auto;
+padding: 5px;
+}
+footer {
+background: black;
+text-align: center;
+padding: 53px;
+}
