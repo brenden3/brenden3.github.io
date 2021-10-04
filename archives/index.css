@@ -12,7 +12,6 @@ text-decoration: none;
 }
 ul {
 list-style-type: none;
-margin-top: 40px;
 padding: 0;
 overflow: hidden;
 }
@@ -26,22 +25,23 @@ color: white;
 text-align: center;
 text-decoration: none;
 }
-h1 {
-display: inline;	
-}
 h2 {
 margin-bottom: -16px;
-}
-h3 {
-display: inline;
 }
 #main {
 margin: 8px;
 }
-.site-container {
+.item-container {
 background: black;
 overflow: auto;
 padding: 5px;
+}
+.preview {
+float: left; 
+margin-right: 10px;
+}
+.item-title {
+margin-top: 0;
 }
 footer {
 background: black;
