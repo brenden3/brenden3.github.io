@@ -35,6 +35,7 @@ margin: 8px;
 background: black;
 overflow: auto;
 padding: 5px;
+border-radius: 5px;
 }
 .preview {
 float: left; 
@@ -43,6 +44,9 @@ width: 300px;
 }
 .item-title {
 margin-top: 0;
+}
+.item-p {
+margin-right: 25px;
 }
 footer {
 background: black;
