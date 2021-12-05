@@ -8,6 +8,7 @@ margin: 0;
 }
 a {
 color: white;
+text-decoration: none;
 }
 .navlink:after {
 content: "";  
@@ -61,7 +62,6 @@ background: black;
 overflow: auto;
 padding: 5px;
 border-radius: 5px;
-text-decoration: none;
 }
 .preview {
 float: left; 
