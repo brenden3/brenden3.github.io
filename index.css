@@ -12,7 +12,7 @@ color: white;
 .navlink:after {
 content: "";  
 position: relative;  
-width: 0%;
+width: 0px;
 margin: auto;
 height: 3px;
 background-color: white;
@@ -22,12 +22,12 @@ display: block;
 transition: 0.4s ease;
 }
 .navlink:hover:after {
-width: 50%;
+width: 90px;
 }
 #active:after {
 content: "";  
 position: relative;  
-width: 50%;
+width: 90px;
 margin: auto;
 height: 3px;
 background-color: white;
