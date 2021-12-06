@@ -1,3 +1,4 @@
+document.getElementById("caption").addEventListener("click", toggle);
 function toggle() {
 var x = document.getElementById("cmd");
 var y = document.getElementById("caption");
