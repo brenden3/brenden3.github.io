@@ -28,7 +28,7 @@ width: 100px;
 #active:after {
 content: "";  
 position: relative;  
-width: 90px;
+width: 100px;
 margin: auto;
 height: 3px;
 background-color: white;
