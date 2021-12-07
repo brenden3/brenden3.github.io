@@ -23,12 +23,12 @@ display: block;
 transition: 0.4s ease;
 }
 .navlink:hover:after {
-width: 90px;
+width: 100px;
 }
 #active:after {
 content: "";  
 position: relative;  
-width: 90px;
+width: 100px;
 margin: auto;
 height: 3px;
 background-color: white;
