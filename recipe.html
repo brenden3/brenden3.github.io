@@ -13,7 +13,7 @@ body {
 background-color: #321f1f;
 color: #fff4e3;
 font-family: "Roboto", sans-serif;
-font-size: 18px;
+                font-size: 18px;
 }
 .heading {
 font-family: "DM Serif Display", serif;
@@ -40,16 +40,16 @@ padding: 15px 0 30px 30px;
 margin: 0 auto 0 auto;
 display: block;
 border-radius: 5px;
-border: 1px solid orange;
+border: 3px solid orange;
 text-align: left;
 background: #fff4e3;
 width: 90%;
 height: auto;
 font-size: 14px;
-		padding-bottom: 20px;
+padding-bottom: 20px;
 color: #321f1f;
-		overflow-y: auto;
-		overflow-x: hidden;
+overflow-y: auto;
+overflow-x: hidden;
 }
 #recipe-img {
 display: inline;
@@ -58,8 +58,7 @@ margin: 0 auto 0 auto; /*top, right, bottom, left*/
 }
 #recipe-heading {
 color: #321f1f;
-font-size: 42px;
-		font-size:3em;
+font-size: 3em;
 margin: 0;
 font-family: "DM Serif Display", serif;
 }
@@ -71,14 +70,14 @@ margin: 0;
 font-family: "DM Serif Display", serif;
 }
 #recipe-heading-container {
-		text-align: center;
-		margin: 0 8px 20px 0;
-		width: 100%;
-		padding: 20px 0 20px 0;
-		background: #f7f7f7;
-		height: auto;
-		border-radius: 6px 6px 0 0;
-	}
+                text-align: center;
+                margin: 0 8px 20px 0;
+                width: 100%;
+                padding: 20px 0 20px 0;
+                background: #f7f7f7;
+                height: auto;
+                border-radius: 6px 6px 0 0;
+        }
 	#recipe-blurb {
 		font-size: 20px;
 		font-style: italic;
@@ -94,111 +93,148 @@ padding: 0 6px 0 6px;
 border-right: 1px solid;
 white-space: nowrap;
 }
+	.recipe-info-box:last-of-type {
+		border: none;
+}
 b {
 font-weight: 500;
 }
-	ul {
-		list-style-type: circle;
-		list-style-position: inside;
-		margin: 0 auto 20px auto;
-		padding-left: 30px;
-		padding-right: 24px;
-		font-size: 18px;
+        ul {
+                list-style-type: circle;
+                list-style-position: inside;
+                margin: 0 auto 20px auto;
+                padding-left: 30px;
+                padding-right: 24px;
+                font-size: 18px;
+        }
+        ol {
+                list-style-position: inside;
+                font-size: 18px;
+                margin: 0 auto 20px auto;
+                padding-left: 30px;
+                padding-right: 24px;
+        }
+	ol li {
+		margin-bottom: 8px;
 	}
-	ol {
-		list-style-position: inside;
-		font-size: 18px;
-		margin: 0 auto 20px auto;
-		padding-left: 30px;
-		padding-right: 24px;
+	ol:last-child {
+		margin-bottom: 0;
 	}
-	#section-left {
+        #section-left {
+                float: left;
+                width: 100%;
+        }
+        #section-right {
+                float: right;
+                width: 100%;
+        }
+	#recipe-notes {
 		float: left;
-  		width: 100%;
+        width: 100%;
 	}
-	#section-right {
-		float: right;
-  		width: 100%;
+	#recipe-notes li {
+		margin-bottom: 8px;
 	}
-	
-	@media only screen and (orientation: landscape)
-		{
+	#recipe-notes:last-child {
+		margin-bottom: 0;
+	}
+	h3, h4, h5 {
+		font-weight: 500;
+	}
+        @media only screen and (orientation: landscape) {
 		#section-left, #section-right {
 			width: 50%; 
 		}
 }
-	@media only screen and (max-width: 980px)
-		{
+	@media only screen and (max-width: 980px) {
 		#section-left, #section-right {
 			width: 100%; 
 		}
-}
 </style>
 <script type="text/javascript">
-
 </script>
 </head>
-
 <body>
-<div id="heading-container">
+<header id="heading-container">
 <h1 class="heading">The Best Pumpkin Bread Ever</h1>
 <h2 class="subheading">September 10th, 2023</h2>
-</div>
-<div id="recipe-wrapper">
-	<div id="recipe-heading-container">
-<img id="recipe-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-6QKUEh90KzCa9QG-5Y8qY_M1Lgg6rr04w&usqp=CAU" width="125">
-<p id="recipe-heading">Pumpkin Bread</p><hr>
-<div class="recipe-info-box"><span><b>Yield:</b> 2 loaves</span></div>
-<div class="recipe-info-box"><span><b>Prep Time:</b> 15 min</span></div>
-<div class="recipe-info-box"><span><b>Bake Time:</b> 60 min</span></div>
-<div class="recipe-info-box" style="border:none;"><span><b>Total Time:</b> 1 hr 15 min</span></div>
-
-	<br><br><span><b>Makes 20 servings</b></span>
-		<p id="recipe-blurb">Enjoy the cozy fall flavors of this delicious spiced pumpkin bread!<br><a href="https://www.foodnetwork.com/recipes/pumpkin-bread-recipe-1957866">Adapted from Food Network</a></p>
-	</div>
-	<div id="section-left">
-	<p class="recipe-subheading">Ingredients:</p>
-	<ul>
-		<li>2 9" × 5" loaf pans, greased and floured</li>
-		<li>3 ½ cups (425g) all-purpose flour</li>
-		<li>2 cups white sugar</li>
-		<li>1 cup brown sugar</li>
-		<li>1 cup vegetable oil</li>
-		<li>2/3 cup milk or water <a href="#milk-note">(see note)</a></li>
-		<li>1 tsp vanilla extract</li>
-		<li>4 eggs</li>
-		<li>2 tsp salt</li>
-		<li>2 tsp baking soda</li>
-		<li>1 tsp baking powder</li>
-		<li>2 tsp nutmeg</li>
-		<li>2 tsp allspice</li>
-		<li>2 tsp cinnamon</li>
-		<li>1 tsp ground cloves</li>
-		<li>1/2 tsp ground ginger</li>
-	</ul><br>
-	</div>
-	<div id="section-right">
-	<p class="recipe-subheading">Instructions:</p>
-	<ol>
-		<li>Preheat the oven to <b>350°F.</b> Grease and flour the loaf pans.</li>
-		<li>Whisk together the oil, milk, eggs, pumpkin, and vanilla extract until they're fully combined.</li>
-		<li>In a seperate bowl, mix the flour, sugars, salt, baking soda, baking powder, and all the spices</li>
-		<li>Mix together the wet and dry ingredients, then divide the batter evenly between each pan.</li>
-		<li>Bake for <b>one hour,</b> checking once at the last 5 minutes. They're done once a skewer inserted into the center comes out clean.</li>
-		<li>Wait 25 minutes before removing the loaves from their pans. Wait an additional hour for the loaves to cool completely before wrapping or freezing. Enjoy!</li><br>
-	</ol>
-	</div>
-	<div style="float:left;width:100%;">
-		<p class="recipe-subheading">Notes:</p>
-	<ul>
-		<li><b><u>Sugar:</u></b> You can use any combination of brown and white sugar that equals 3 cups (or use all one kind), but I think the 1:3 mixture tastes the best.</li>
-		<li id="milk-note"><b><u>Milk:</u></b> You can use any kind of milk—skim, 1%, 2%, whole, and probably even plant milks, but I haven't tried that. You can also swap the milk for an equal amount of water, but the resulting pumpkin bread won't be as rich and flavorful.</li>
-		<li><b><u>Flour:</u></b> I highly recommend weighing out your flour! If you don't, make sure you <a href="https://www.youtube.com/embed/GUSovVHpqsU">spoon and level the flour</a> into the measuring cup. You can also swap the all-purpose flour for whole-wheat flour, but this will yield a denser loaf.</li>
-		<li><b><u>Crust:</u></b> If you want a less crispy crust on the tops of your loaves, or if the tops are browning too fast, loosely cover them with foil for the last 8-10 minutes they're in the oven.</li>
-		<li><b><u>Oil:</u></b> You can use almost any oil. Olive oil, avocado oil, probably coconut oil too, as long as you melt it first. You can even use melted butter. Just keep in mind that different kinds of oil will yield different flavors and textures.</li>
-		</ul>
-	</div>
-</div>
+</header>
+<article id="recipe-wrapper">
+        <header id="recipe-heading-container">
+<img id="recipe-img"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL-6QKUEh90KzCa9QG-5Y8qY_M1Lgg6rr04w&usqp=CAU"
+width="125">
+<h3 id="recipe-heading">Pumpkin Bread</h3><hr>
+			<div class="recipe-info-box"><span><b>Yield:</b> 2 loaves</span></div>
+			<div class="recipe-info-box"><span><b>Prep Time:</b> 15 min</span></div>
+			<div class="recipe-info-box"><span><b>Bake Time:</b> 60 min</span></div>
+			<div class="recipe-info-box"><span><b>Total Time:</b> 1 hr 15 min</span></div>
+        <br><br><span><b>Makes 20 servings</b></span>
+			<h5 id="recipe-blurb">Enjoy the cozy fall flavors of this delicious spiced pumpkin bread!<br><a href="https://www.foodnetwork.com/recipes/pumpkin-bread-recipe-1957866">Adapted from Food Network</a></h5>
+	</header>
+        <section id="section-left">
+        <h4 class="recipe-subheading">Ingredients:</h4>
+        <ul>
+                <li>2 9" × 5" loaf pans, greased and floured</li>
+                <li>3 ½ cups (425g) all-purpose flour</li>
+                <li>2 cups white sugar</li>
+                <li>1 cup brown sugar</li>
+                <li>1 cup vegetable oil</li>
+                <li>2/3 cup milk or water <a href="#milk-note">(see note)</a></li>
+                <li>1 tsp vanilla extract</li>
+                <li>4 eggs</li>
+                <li>2 tsp salt</li>
+                <li>2 tsp baking soda</li>
+                <li>1 tsp baking powder</li>
+                <li>2 tsp nutmeg</li>
+                <li>2 tsp allspice</li>
+                <li>2 tsp cinnamon</li>
+                <li>1 tsp ground cloves</li>
+                <li>1/2 tsp ground ginger</li>
+        </ul><br>
+        </section>
+        <section id="section-right">
+        <h4 class="recipe-subheading">Instructions:</h4>
+        <ol>
+                <li>Preheat the oven to 350°F. Grease and flour the loaf pans.</li>
+                <li>Whisk together the oil, milk, eggs, pumpkin, and vanilla extract
+until they're fully combined.</li>
+                <li>In a seperate bowl, mix the flour, sugars, salt, baking soda,
+baking powder, and all the spices</li>
+                <li>Mix together the wet and dry ingredients, then divide the batter
+evenly between each pan.</li>
+                <li>Bake for one hour, checking once at the last 5 minutes. They're
+done once a skewer inserted into the center comes out clean.</li>
+                <li>Wait 25 minutes before removing the loaves from their pans. Wait
+an additional hour for the loaves to cool completely before wrapping
+or freezing. Enjoy!</li><br>
+        </ol>
+        </section>
+        <section id="recipe-notes">
+                <h4 class="recipe-subheading">Notes:</h4>
+        <ul>
+                <li><b><u>Sugar:</u></b> You can use any combination of brown and
+white sugar that equals 3 cups (or use all one kind), but I think the
+1:2 mixture tastes the best.</li>
+                <li id="#milk-note"><b><u>Milk:</u></b> You can use any kind of milk—skim, 1%, 2%,
+whole, and probably even plant milks, but I haven't tried that. You
+can also swap the milk for an equal amount of water, but the resulting
+pumpkin bread won't be as rich and flavorful.</li>
+                <li><b><u>Flour:</u></b> I highly recommend weighing out your flour!
+If you don't, make sure you <a
+href="https://www.youtube.com/embed/GUSovVHpqsU">spoon and level the
+flour</a> into the measuring cup. You can also swap the all-purpose
+flour for whole-wheat flour, but this will yield a denser loaf.</li>
+                <li><b><u>Crust:</u></b> If you want a less crispy crust on the tops
+of your loaves, or if the tops are browning too fast, loosely cover
+them with foil for the last 8-10 minutes they're in the oven.</li>
+                <li><b><u>Oil:</u></b> You can use almost any oil. Olive oil,
+avocado oil, probably coconut oil too. Just keep in mind that
+different kinds of oil will yield different flavors and textures.</li>
+        </ul>
+	</section>
+	
+</article>
 <span class="body-text">lorem ipsum very cool</span>
 </body>
 </html>
