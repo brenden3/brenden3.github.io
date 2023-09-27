@@ -6,11 +6,14 @@
 <title>HTMLiveCode</title>
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Slab:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+html {
+scroll-behavior: smooth;
+}
 body {
 background-color: #321f1f;
 color: #fff4e3;
 font-family: "Roboto", sans-serif;
-		font-size: 18px;
+font-size: 18px;
 }
 .heading {
 font-family: "DM Serif Display", serif;
@@ -37,7 +40,7 @@ padding: 15px 0 30px 30px;
 margin: 0 auto 0 auto;
 display: block;
 border-radius: 5px;
-border: 2px solid orange;
+border: 1px solid orange;
 text-align: left;
 background: #fff4e3;
 width: 90%;
@@ -118,7 +121,7 @@ font-weight: 500;
   		width: 100%;
 	}
 	
-	@media only screen and (orientation: landscape)
+	@media only screen (orientation: landscape)
 		{
 		#section-left, #section-right {
 			width: 50%; 
@@ -161,7 +164,7 @@ font-weight: 500;
 		<li>2 cups white sugar</li>
 		<li>1 cup brown sugar</li>
 		<li>1 cup vegetable oil</li>
-		<li>2/3 cup milk or water (see note)</li>
+		<li>2/3 cup milk or water <a href="#milk-note">(see note)</a></li>
 		<li>1 tsp vanilla extract</li>
 		<li>4 eggs</li>
 		<li>2 tsp salt</li>
@@ -177,11 +180,11 @@ font-weight: 500;
 	<div id="section-right">
 	<p class="recipe-subheading">Instructions:</p>
 	<ol>
-		<li>Preheat the oven to 350°F. Grease and flour the loaf pans.</li>
+		<li>Preheat the oven to <b>350°F.</b> Grease and flour the loaf pans.</li>
 		<li>Whisk together the oil, milk, eggs, pumpkin, and vanilla extract until they're fully combined.</li>
 		<li>In a seperate bowl, mix the flour, sugars, salt, baking soda, baking powder, and all the spices</li>
 		<li>Mix together the wet and dry ingredients, then divide the batter evenly between each pan.</li>
-		<li>Bake for one hour, checking once at the last 5 minutes. They're done once a skewer inserted into the center comes out clean.</li>
+		<li>Bake for <b>one hour,</b> checking once at the last 5 minutes. They're done once a skewer inserted into the center comes out clean.</li>
 		<li>Wait 25 minutes before removing the loaves from their pans. Wait an additional hour for the loaves to cool completely before wrapping or freezing. Enjoy!</li><br>
 	</ol>
 	</div>
@@ -189,7 +192,7 @@ font-weight: 500;
 		<p class="recipe-subheading">Notes:</p>
 	<ul>
 		<li><b><u>Sugar:</u></b> You can use any combination of brown and white sugar that equals 3 cups (or use all one kind), but I think the 1:3 mixture tastes the best.</li>
-		<li><b><u>Milk:</u></b> You can use any kind of milk—skim, 1%, 2%, whole, and probably even plant milks, but I haven't tried that. You can also swap the milk for an equal amount of water, but the resulting pumpkin bread won't be as rich and flavorful.</li>
+		<li id="milk-note"><b><u>Milk:</u></b> You can use any kind of milk—skim, 1%, 2%, whole, and probably even plant milks, but I haven't tried that. You can also swap the milk for an equal amount of water, but the resulting pumpkin bread won't be as rich and flavorful.</li>
 		<li><b><u>Flour:</u></b> I highly recommend weighing out your flour! If you don't, make sure you <a href="https://www.youtube.com/embed/GUSovVHpqsU">spoon and level the flour</a> into the measuring cup. You can also swap the all-purpose flour for whole-wheat flour, but this will yield a denser loaf.</li>
 		<li><b><u>Crust:</u></b> If you want a less crispy crust on the tops of your loaves, or if the tops are browning too fast, loosely cover them with foil for the last 8-10 minutes they're in the oven.</li>
 		<li><b><u>Oil:</u></b> You can use almost any oil. Olive oil, avocado oil, probably coconut oil too, as long as you melt it first. You can even use melted butter. Just keep in mind that different kinds of oil will yield different flavors and textures.</li>
